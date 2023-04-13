@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carimage-and-text{
+    height: 530px;
+    margin-bottom: 20px;
+    background-image: url("../images/car-banner.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-now{
+    background-color: white;  
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.register-now h2{
+    text-align: center;   
+    margin-bottom: 20px;
+}
+
+.register-now select{
+    height: 36px;
+}
+
+.register-part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.register-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-aim-paragraphs,.home-aiming-text{
+    width: 85%;
+    margin-top: 15px;
+}
+
+.what-we-offer{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.offer-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.offer-card{
+    width: 290px;
+    transition: .2s ease-in-out;
+    margin-right: 10px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.offer-card:hover{
+    box-shadow: 10px 10px 20px black ;
+    cursor: pointer;
+}
+
+.offer-card-title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 100px;
+   background-color: #FF8400;
+   background-image: url("https://trafficnet.ca/wp-content/uploads/2016/09/traffic-banner-02.jpg");
+   color: white;
+}
+
+.offer-card-paragraph{
+    text-align: justify;
+    height: 250px;
+    padding: 10px;
+ }
+
+.offer-card-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.offer-card-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.why-choose-master{
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.why-choose-master-body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.qualified,.affordable,.e-learning,.multiculturalism{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    margin: 30px ;
+}
+
+.e-learning-text,.multiculturalism-text{
+   margin-left: 20px;
+}
+
+.work-with-us{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.work-with-us-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.user-numbers{
+    width: 100%;
+    height: 400px;
+    background-color:#EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user-numbers-card{
+    padding: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25D366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
