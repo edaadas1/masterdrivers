@@ -5,21 +5,24 @@ import "../assets/css/home.css";
 
 const SelectBox = () => {
 
-    const [course,setCourse] = React.useState(3);
+    const [course, setCourse] = React.useState(10);
 
-    const updateSelectVal=(e)=>{
-        console.warn(e.target.value)
-        setCourse(e.target.value)
-    }
-
+    const handleChange = (event) => {
+        setCourse(event.target.value);
+    };
+    
     return (
     <div>
-        <Select style={{marginRight:15}} value={course} displayEmpty onchange={updateSelectVal}>
-            <MenuItem value="" disabled>Select Your Course</MenuItem>
-            <MenuItem value={1}>Select Course</MenuItem>
-            <MenuItem value={2}>Select Course</MenuItem>
-            <MenuItem value={3}>Select Course</MenuItem>
-            <MenuItem value={4}>Select Course</MenuItem>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={course}
+          label="Course"
+          onChange={handleChange}
+        >
+          <MenuItem value={10} disabled>Select Your Course</MenuItem>
+          <MenuItem value={20}>G1 Knowledge Preparation</MenuItem>
+          <MenuItem value={30}>Online Beginner Driver Education</MenuItem>
         </Select>
       
     </div>

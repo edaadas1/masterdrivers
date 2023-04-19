@@ -15,6 +15,7 @@
 
 .register-now{
     background-color: white;  
+    width: 70%;
     padding: 20px 50px;
     border-radius: 10px;
 }
@@ -86,15 +87,21 @@
    text-align: center;
    height: 100px;
    background-color: #FF8400;
-   background-image: url("https://trafficnet.ca/wp-content/uploads/2016/09/traffic-banner-02.jpg");
+   background-image: url("../images/traffic-banner.jpg");
    color: white;
 }
 
 .offer-card-paragraph{
-    text-align: justify;
     height: 250px;
-    padding: 10px;
- }
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.offer-card-span{
+    font-weight: bold;
+}
 
 .offer-card-options{
     display: flex;
@@ -114,14 +121,46 @@
 .why-choose-master{
     margin-bottom: 50px;
     text-align: center;
-
 }
 
 .why-choose-master-body{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
+
+.pricing-details-location{
+    background-color: white;  
+    width: 70%;
+    padding: 20px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 130px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.pricing-details-location h2{
+    text-align: center;   
+    margin-bottom: 20px;
+}
+
+.pricing-details-location select{
+    height: 36px;
+}
+
+.pricing-details-location-part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.pricing-details-location-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .qualified,.affordable,.e-learning,.multiculturalism{
     display: flex;

@@ -3,10 +3,10 @@ import { useState } from 'react';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "../assets/css/navbar.css";
 import { Button } from '@mui/material';
-import { BsFacebook } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
-import { BsYoutube } from "react-icons/bs";
 import {Link} from "react-router-dom";
+import { CiFacebook } from "react-icons/ci";
+import { SlSocialInstagram } from "react-icons/sl";
+import { AiOutlineYoutube } from "react-icons/ai";
 
 const Navbar =()=> {
 
@@ -51,9 +51,9 @@ const Navbar =()=> {
         <div className="navbar">
             <div className='social-media-icons'>
                 <ul>
-                    <li><a href=""><BsFacebook color='white' size={23}/></a></li>
-                    <li><a href=""><RiInstagramFill className='instagram' color='white' size={27}/></a></li>
-                    <li><a href=""><BsYoutube className='youtube'  color='white' size={27}/></a></li>
+                    <li><a href=""><CiFacebook size="30px" color='19A7CE'/></a></li>
+                    <li><a href=""><SlSocialInstagram className='instagram' size="25px" color='E11299'/></a></li>
+                    <li><a href=""><AiOutlineYoutube className='youtube' size="35px" color='red'/></a></li>
                 </ul>
             </div>
 

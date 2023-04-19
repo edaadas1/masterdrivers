@@ -46,7 +46,7 @@ const Home = () => {
 
         <div className='home'>
             <img src={logo} alt='logo' width={300}></img>
-            <h1 className='home-aiming-text' style={{textAlign:"center"}}>Aiming to be the best driving school in Ontario!</h1>
+            <h1 className='home-aiming-text' style={{textAlign:"center"}}>Best driving school in Ontario!</h1>
             <div className='home-aim-paragraphs'>
                 <p>       
                     Master Driving School (Master Drivers) is approved by the Ministry of Transportation of Ontario (MTO) 
@@ -72,11 +72,90 @@ const Home = () => {
 
             <h1 className='what-we-offer'>WHAT WE OFFER?</h1>
             <div className='offer-cards'>
+            <div className='offer-card'>
+            <h3 className='offer-card-title'>Online G1 Preparation</h3>
+            <p className='offer-card-paragraph'>
+                If you haven’t taken the G1 Written (Knowledge) Test, these are the best fit for you. 
+                The G1 preparation Course will teach you and you will learn everything you need to pass 
+                the G1 Test. Also, we offer <span className='offer-card-span'>G1 practice tests for free</span> 
+                and are available in <span className='offer-card-span'>English,French, Chinese, Hindi, Arabic, 
+                and Turkish.</span>  Explore our online programs now and try the demo test.
+            </p>
+            <div className='offer-card-options'>
+                <h4>G1 Knowledge Preparation Course</h4>
+                <h4>G1 Knowledge Practice Tests</h4>
+            </div>
+            <div className='offer-card-button'>
+                <Button variant="contained" color='primary'>Learn More</Button>
+            </div>
+            
+            </div>
+            <div className='offer-card'>
+            <h3 className='offer-card-title'>Online Beginner Driver Education</h3>
+            <p className='offer-card-paragraph'>
+                If you are already holding your G1 Licence and waiting for the G2 Road Test, complete our online 
+                Beginner Driver Education to become eligible to book your <span className='offer-card-span'>road 
+                test 4 months earlier</span>  and have a great <span className='offer-card-span'>insurance discount.</span>
+            </p>
+            <div className='offer-card-options'>
+                <h4>Student Package</h4>
+                <h4>Standard Package</h4>
+                <h4>Premium Package</h4>
+            </div>
+            <div className='offer-card-button'>
+                <Button variant="contained" color='primary'>Learn More</Button>
+            </div>
+            
+            </div>
+            <div className='offer-card'>
+            <h3 className='offer-card-title'>Individual In-car Driving Lessons</h3>
+            <p className='offer-card-paragraph'>
+                We offer a minimum of 2 hours of in-car training whose goal is to become more confident before 
+                the <span className='offer-card-span'>G2 or G Road Test.</span>  These lessons will also help senior drivers improve their driving skills. 
+                Our <span className='offer-card-span'>one-on-one in-car training can be scheduled online</span> based on your availability. We have 
+                experienced (ex-examiner) instructors who can train in <span className='offer-card-span'>English, Hindi, Chinese, Urdu, Punjabi, 
+                Arabic, and Turkish</span> depends on the location. Explore our lessons now.
+            </p>
+            <div className='offer-card-options'>
+                <h4>2 hours of in-car training</h4>
+                <h4>G2 / G Road Test</h4>
+            </div>
+            <div className='offer-card-button'>
+                <Button variant="contained" color='primary'>Learn More</Button>
+            </div>
+            
+            </div>
+            <div className='offer-card'>
+            <h3 className='offer-card-title'>Individual In-car Driving Packages</h3>
+            <p className='offer-card-paragraph'>
+                You may also buy our one-on-one in-car training packages to purchase more than 2 hours at once 
+                and get discount. You can book your lessons when you are available to take.
+            </p>
+            <div className='offer-card-options'>
+                <h4>4 hours of in-car training</h4>
+                <h4>6 hours of in-car training</h4>
+                <h4>10 hours of in-car training</h4>
+            </div>
+            <div className='offer-card-button'>
+                <Button variant="contained" color='primary'>Learn More</Button>
+            </div>
+            
+            </div>
+                    {/* <HomeCard/>
                     <HomeCard/>
                     <HomeCard/>
-                    <HomeCard/>
-                    <HomeCard/>
+                    <HomeCard/> */}
+            </div>
+
+            <div className='pricing-details-location' >
+                <h2>Let's Find Your Driving Pricing!</h2>
+                <div className='pricing-details-location-part'>
+                    <div className='pricing-details-location-boxes'>
+                        <SelectBox2/>
+                    </div> 
+                    <Button style={{paddingLeft:50,paddingRight:50}} variant="contained" color='error'>Let's Go Pricing Details</Button>
                 </div>
+            </div>
 
             <h1 className='why-choose-master'>WHY CHOOSE MASTER DRIVERS?</h1>
                     
