@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+import Home from './pages/Home';
 import Footer from './components/Footer';
 import {BrowserRouter as Router,Route} from "react-router-dom";
-import ContactUs from './components/ContactUs';
+import ContactUs from './pages/ContactUs';
+import Career from './pages/Career';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         </Route>
 
         <Route path="/career">
-          
+          <Career/>
         </Route>
 
         <Route path="/blogs">

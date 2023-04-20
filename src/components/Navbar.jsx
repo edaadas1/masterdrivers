@@ -48,14 +48,18 @@ const Navbar =()=> {
 
     return(
         <>
-        <div className="navbar">
-            <div className='social-media-icons'>
+
+        <div className='topbar'>
+        <div className='social-media-icons'>
                 <ul>
                     <li><a href=""><CiFacebook size="30px" color='19A7CE'/></a></li>
                     <li><a href=""><SlSocialInstagram className='instagram' size="25px" color='E11299'/></a></li>
                     <li><a href=""><AiOutlineYoutube className='youtube' size="35px" color='red'/></a></li>
                 </ul>
             </div>
+        </div>
+        <div className="navbar">
+            
 
             <div className='bottom-social-icons'>
 
@@ -74,8 +78,8 @@ const Navbar =()=> {
                         <ArrowDropDownIcon></ArrowDropDownIcon>
                         </Link>
                     </li>
-                    <li><Link to="/career" className='link'>Career</Link></li>
                     <li><Link to="/blogs" className='link'>Blogs</Link></li>
+                    <li><Link to="/career" className='link'>Career</Link></li>
                     <li><Link to="/contact-us" className='link'>Contact Us</Link></li>
                 </ul>
             </div>

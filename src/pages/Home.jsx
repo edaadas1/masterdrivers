@@ -2,16 +2,15 @@ import React from 'react'
 import "../assets/css/home.css";
 import logo from '../assets/images/masterdrivers-logo.png';
 import workus from '../assets/images/work-with-us.jpg';
-import HomeCard from './HomeCard';
 import DirectionsCarFilledOutlinedIcon from '@mui/icons-material/DirectionsCarFilledOutlined';
 import EuroIcon from '@mui/icons-material/Euro';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import LanguageIcon from '@mui/icons-material/Language';
 import { Button } from '@mui/material';
-import SelectBox1 from './SelectBox1';
-import SelectBox2 from './SelectBox2';
-import ImageSlider from './HomeSlider';
-import Testimonials from './Testimonials';
+import SelectBox1 from '../components/SelectBox1';
+import SelectBox2 from '../components/SelectBox2';
+import ImageSlider from '../components/HomeSlider';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
 

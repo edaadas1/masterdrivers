@@ -2,6 +2,8 @@ import React from 'react'
 import "../assets/css/contact-us.css";
 import { TextField, MenuItem, Checkbox, Button } from '@mui/material';
 import  Select  from '@mui/material/Select';
+import MailIcon from '@mui/icons-material/Mail';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 const ContactUs = () => {
 
@@ -27,8 +29,9 @@ const ContactUs = () => {
     <>
       <div className='contact-us-page'>
         <div className='contact-us-form'>
+       
             <div className='form-part'>
-            <h3 style={{marginBottom:20,marginTop:5,fontSize:25}}>GET IN TOUCH</h3>
+            <h3 style={{marginBottom:20,marginTop:5,fontSize:25,color:"#F98404",fontFamily:"Noto Serif Hebrew, serif"}}>GET IN TOUCH</h3>
             <div>
                 <form action="">
                     <div className='columns'>
@@ -99,10 +102,25 @@ const ContactUs = () => {
             </div>
             
             </div>
-            <div className='contact-us-map'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10731137.80010985!2d-93.70651518576767!3d48.95526259105919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Kanada!5e0!3m2!1str!2str!4v1681740523614!5m2!1str!2str" 
-            width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div className='contact-us-map-part'>
+                <div className='map-icons'>
+                    <ul>
+                        <li style={{marginRight:50}}>
+                            <MailIcon/>
+                            <p>Email Us</p>
+                        </li>
+                        <li>
+                            <LocalPhoneIcon/>
+                            <p>Call Us</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10731137.80010985!2d-93.70651518576767!3d48.95526259105919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Kanada!5e0!3m2!1str!2str!4v1681740523614!5m2!1str!2str" 
+                    width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
+                
         </div>
       </div>
     </>
