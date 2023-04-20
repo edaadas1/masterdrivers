@@ -31,7 +31,7 @@ const ContactUs = () => {
         <div className='contact-us-form'>
        
             <div className='form-part'>
-            <h3 style={{marginBottom:20,marginTop:5,fontSize:25,color:"#F98404",fontFamily:"Noto Serif Hebrew, serif"}}>GET IN TOUCH</h3>
+            <h3 style={{marginBottom:20,marginTop:5,fontSize:25,fontFamily:"Noto Serif Hebrew, serif"}}>GET IN TOUCH</h3>
             <div>
                 <form action="">
                     <div className='columns'>

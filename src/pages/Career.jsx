@@ -21,6 +21,12 @@ const Career = () => {
     const [image2,setImage2] = useState(null);
     const [fileName2,setFileName2] = useState("No selected file")
 
+    const [image3,setImage3] = useState(null);
+    const [fileName3,setFileName3] = useState("No selected file")
+
+    const [image4,setImage4] = useState(null);
+    const [fileName4,setFileName4] = useState("No selected file")
+
   return (
     <>   
         <div className='career-page'>
@@ -59,7 +65,7 @@ const Career = () => {
                             <li>5 images showing a dual brake pedal for the instructor, every side view of the instructor’s vehicle including the license plate.</li>
                         </ul>
 
-                        <h3 style={{marginTop:40 ,marginBottom:20}}>Attention</h3>
+                        <h3 style={{marginTop:60 ,marginBottom:20}}>Attention</h3>
                         <ul>
                             <li>Only those who meet the requirements for the position will be contacted.</li>
                             <li>Payment: We offer hourly rates based on experience.</li>
@@ -173,6 +179,76 @@ const Career = () => {
                                 onClick={()=>{
                                     setFileName2("No Selected File")
                                     setImage2(null)
+                                }}
+                                />
+                            </span>
+                            </section>
+
+                            <Typography>In-car Driving Instructor’s Licence *</Typography>
+                            
+                            <form action="" className='file-uploader-form' onClick={()=>document.querySelector(".input-field3").click()}>
+                                <input type="file" className='input-field3' hidden
+                                onChange={({target:{files}})=>{
+                                    files[0] && setFileName3(files[0].name)
+                                    if(files){
+                                    setImage(URL.createObjectURL(files[0]))
+                                    }
+                                }}
+                                />
+
+                                {image3 ?
+                                <img src={image3} width={300} height={10} alt={fileName3} />
+                                :
+                                <>
+                                <MdCloudUpload color="#147cf" size={60}/>
+                                <p>Browse Files to upload</p>
+                                </>
+                                }
+                            </form>
+
+                            <section className='uploaded-row'>
+                            <AiFillFileImage color="#1475cf" />
+                            <span className='upload-content'>
+                                {fileName3}
+                                <MdDelete
+                                onClick={()=>{
+                                    setFileName3("No Selected File")
+                                    setImage3(null)
+                                }}
+                                />
+                            </span>
+                            </section>
+
+                            <Typography>Driver Instructor Insurance Approval *</Typography>
+                            
+                            <form action="" className='file-uploader-form' onClick={()=>document.querySelector(".input-field3").click()}>
+                                <input type="file" className='input-field3' hidden
+                                onChange={({target:{files}})=>{
+                                    files[0] && setFileName4(files[0].name)
+                                    if(files){
+                                    setImage(URL.createObjectURL(files[0]))
+                                    }
+                                }}
+                                />
+
+                                {image4 ?
+                                <img src={image4} width={300} height={10} alt={fileName4} />
+                                :
+                                <>
+                                <MdCloudUpload color="#147cf" size={60}/>
+                                <p>Browse Files to upload</p>
+                                </>
+                                }
+                            </form>
+
+                            <section className='uploaded-row'>
+                            <AiFillFileImage color="#1475cf" />
+                            <span className='upload-content'>
+                                {fileName4}
+                                <MdDelete
+                                onClick={()=>{
+                                    setFileName4("No Selected File")
+                                    setImage4(null)
                                 }}
                                 />
                             </span>
