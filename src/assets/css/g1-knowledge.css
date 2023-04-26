@@ -26,3 +26,218 @@
     margin-left: 30px;
     margin-bottom: 10px;
 }
+
+.g1-knowledge-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.g1-knowledge-card{
+    width: 290px;
+    padding: 20px;
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.g1-knowledge-card p{
+    text-align: justify;
+    padding: 15px;
+}
+
+.g1-knowledge-video-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.g1-knowledge-video-card{
+    width: 290px;
+    padding: 20px;
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(177, 169, 169);
+}
+
+.g1-knowledge-video-card img{
+    width: 100%;
+}
+
+.g1-knowledge-video-card:hover{
+    cursor: pointer;
+}
+
+.how-to-prepare-text{
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.g1-preparation-course-text,.g1-practice-test-text{
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.g1-knowledge-preparation-course,.g1-knowledge-practice-tests{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.g1-knowledge-preparation-course-columns,.g1-knowledge-practice-tests-columns{
+    display: flex;
+}
+
+.g1-knowledge-preparation-course-first-col,.g1-knowledge-preparation-course-second-col,.g1-knowledge-practice-tests-first-col,.g1-knowledge-practice-tests-second-col{
+    width: 50%;
+}
+
+.g1-knowledge-preparation-course-first-col p,.g1-knowledge-preparation-course-second-col p,.g1-knowledge-practice-tests-first-col p,.g1-knowledge-practice-tests-second-col p{
+    text-align: justify;
+}
+
+.g1-knowledge-preparation-course-first-col ul,.g1-knowledge-preparation-course-second-col ul,.g1-knowledge-practice-tests-first-col ul,.g1-knowledge-practice-tests-second-col ul{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.g1-knowledge-preparation-course-first-col ul ul{
+    text-align: center;
+}
+
+.g1-knowledge-preparation-course-buy-part{
+    width: 85%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.g1-knowledge-preparation-course-buy-part img{
+    border-radius: 10px;
+}
+
+.g1-knowledge-practice-tests-img-part{
+    width: 85%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.g1-knowledge-practice-tests-img-part img{
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.buy-part-price,.g1-knowledge-practice-tests-btn-part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 40px;
+}
+
+.line{
+    width: 85%;
+    margin: auto;
+}
+
+.after-written-test-text{
+    margin: auto;
+    width: 85%;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.after-written-test-text ul{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.after-written-test-text li{
+    margin: 10px 0 10px 0;
+}
+
+.after-written-test-columns{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.after-written-test-first-col,.after-written-test-second-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.after-written-test-first-col p{
+    text-align: justify;
+}
+
+.after-written-test-first-col ul{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.after-written-test-second-col img{
+    width: 65%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.after-written-test-columns-btn-part{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 675px) {
+    .g1-knowledge-card{
+        width: 100%;
+    }
+    .g1-knowledge-video-card{
+        width: 70%;
+    }
+}
