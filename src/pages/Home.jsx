@@ -222,7 +222,19 @@ const Home = () => {
                 <div className='user-numbers-card'>
                     <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
                     <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
-                </div>           
+                </div>         
+                <div className='user-numbers-card'>
+                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                </div>    
+                <div className='user-numbers-card'>
+                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                </div>    
+                <div className='user-numbers-card'>
+                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                </div>      
             </div>
 
             {/* fixed whatsapp icon */}

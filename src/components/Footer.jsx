@@ -21,8 +21,8 @@ const Footer = () => {
 
             <div className='social-icons'>
                 <ul>
-                    <li><a href=""><CiFacebook size="30px" color='19A7CE'/></a></li>
-                    <li><a href=""><SlSocialInstagram className='instagram' size="25px" color='E11299'/></a></li>
+                    <li><a href=""><CiFacebook size="30px" color='#3b5998'/></a></li>
+                    <li><a href=""><SlSocialInstagram className='instagram' size="25px" color='#C13584'/></a></li>
                     <li><a href=""><AiOutlineYoutube className='youtube' size="35px" color='red'/></a></li>
                 </ul>
             </div>

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.online-courses-home-img-part{
+    width: 100%;
+    height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/e-learning.jpg");
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.online-courses-home-img-part h1{
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.online-courses-home-text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.online-courses-home-text-part h1{
+    margin-bottom: 25px;
+}
+
+.online-courses-home-text-part p{
+    width: 85%;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.online-courses-home-text-part span{
+    font-weight: bold;
+}
+
+.online-courses-home-course-card-part{
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.online-courses-home-course-card{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px 20px 20px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+}
+
+.online-courses-home-course-card h2{
+    margin: 15px 0 20px 0;
+}
+
+.online-courses-home-course-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.online-courses-home-course-card p{
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+    text-indent: 30px;
+    margin-top: 5px;
+}
+
+.online-courses-home-course-card-btn-part{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.online-courses-home-course-card-explanation{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.online-courses-home-course-card-explanation p{
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 18px;
+}
+
+.online-courses-home-course-card-explanation p a{
+    text-decoration: none;
+}
+
+.online-courses-home-bottom-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.online-courses-home-bottom-card{
+    width: 400px;
+    padding: 20px;
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.online-courses-home-bottom-card img{
+    width: 85%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.online-courses-home-bottom-card h3{
+    margin-bottom: 15px;
+}
+
+.online-courses-home-bottom-card p{
+    margin-bottom: 25px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .online-courses-home-course-card-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .online-courses-home-course-card{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .online-courses-home-course-card-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .online-courses-home-course-card p{
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .online-courses-home-bottom-cards{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

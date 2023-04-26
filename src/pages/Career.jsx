@@ -42,7 +42,7 @@ const Career = () => {
                     feel uncomfortable.</span> We offer you career advancement opportunities that are aligned with the 
                     ISO standards.
                 </p>
-                <p>
+                <p className='introduction-bottom-text'>
                     Our fully online process management system offers our instructors to set their own daily, 
                     weekly, and monthly schedules online with their accounts. That means you are free to determine
                     how many hours plus which days you are going to give service in the name of Master Drivers. 

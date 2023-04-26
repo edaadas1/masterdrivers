@@ -52,15 +52,14 @@ const Navbar =()=> {
         <div className='topbar'>
         <div className='social-media-icons'>
                 <ul>
-                    <li><a href=""><CiFacebook size="30px" color='19A7CE'/></a></li>
-                    <li><a href=""><SlSocialInstagram className='instagram' size="25px" color='E11299'/></a></li>
+                    <li><a href=""><CiFacebook size="30px" color='#3b5998'/></a></li>
+                    <li><a href=""><SlSocialInstagram className='instagram' size="25px" color='#C13584'/></a></li>
                     <li><a href=""><AiOutlineYoutube className='youtube' size="35px" color='red'/></a></li>
                 </ul>
             </div>
         </div>
         <div className="navbar">
-            
-
+        
             <div className='bottom-social-icons'>
 
             <img src={logo} alt="logo" width={200}></img>
@@ -128,8 +127,8 @@ const Navbar =()=> {
         <div style={{display:coursestatus}} className='online-courses-part'>
                 <div className='online-courses-uls'>
                     <ul>
-                        <li>G1 Knowledge Preparation</li>
-                        <li>Online Beginner Driver Education</li>
+                        <li><Link to="/g1-knowledge-preparation">G1 Knowledge Preparation</Link></li>
+                        <li><Link to="/online-beginner-driver-education">Online Beginner Driver Education</Link></li>
                     </ul>
                 </div>
         </div>

@@ -4,6 +4,9 @@ import Footer from './components/Footer';
 import {BrowserRouter as Router,Route} from "react-router-dom";
 import ContactUs from './pages/ContactUs';
 import Career from './pages/Career';
+import OnlineCourses from './pages/OnlineCourses';
+import G1KnowledgePreparation from './pages/G1KnowledgePreparation';
+import OnlineBeginnerDriverEducation from './pages/OnlineBeginnerDriverEducation';
 
 
 function App() {
@@ -19,7 +22,15 @@ function App() {
         </Route>
 
         <Route path="/online-courses">
-          
+          <OnlineCourses/>
+        </Route>
+
+        <Route path="/g1-knowledge-preparation">
+          <G1KnowledgePreparation/>
+        </Route>
+
+        <Route path="/online-beginner-driver-education">
+          <OnlineBeginnerDriverEducation/>
         </Route>
 
         <Route path="/location-pricing">
