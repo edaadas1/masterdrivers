@@ -7,6 +7,7 @@ import Career from './pages/Career';
 import OnlineCourses from './pages/OnlineCourses';
 import G1KnowledgePreparation from './pages/G1KnowledgePreparation';
 import OnlineBeginnerDriverEducation from './pages/OnlineBeginnerDriverEducation';
+import LocationPricingHome from './pages/LocationPricingHome';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         </Route>
 
         <Route path="/location-pricing">
-          
+          <LocationPricingHome/>
         </Route>
 
         <Route path="/career">
