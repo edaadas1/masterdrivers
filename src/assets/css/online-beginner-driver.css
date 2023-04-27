@@ -49,28 +49,27 @@
 }
 
 .online-beginner-driver-education-bottom-cards{
-    width: 100%;
+    width: 95%;
     margin: auto;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 .online-beginner-driver-education-bottom-card{
-    width: 550px;
-    padding: 20px;
-    margin: 30px 20px 20px 20px;
+    width: 350px;
+    padding: 30px;
+    margin: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
 }
 
 .online-beginner-driver-education-bottom-card img{
-    width: 85%;
+    width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
 }
@@ -84,7 +83,5 @@
 }
 
 @media only screen and (max-width: 1167px) {
-    .online-beginner-driver-education-bottom-card{
-        width: 600px;
-    }
+    
 }

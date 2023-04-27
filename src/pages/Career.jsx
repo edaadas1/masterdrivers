@@ -34,6 +34,14 @@ const Career = () => {
             </div>
             <div className='career-body'>
                 <h1>About Working Here</h1>
+                <div className='career-line-part'>
+                    <div style={{borderTop:"2px solid red",width:350}}>
+                    </div>
+                    <div style={{borderTop:"2px solid yellow",width:350}}>
+                    </div>
+                    <div style={{borderTop:"2px solid green",width:350}}>
+                    </div>
+                </div>
                 <p className='introduction-text'>
                     <span className='introduction-text-bold'>Master Driving School is recruiting new driving instructors to the team. </span>We wish to recruit 
                     instructors who have a passion for training and truly desire to make safer the lives of the 

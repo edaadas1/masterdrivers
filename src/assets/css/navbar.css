@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 
-.navbar-options-ul li:hover{
+.navbar-options-ul li a:hover{
     cursor: pointer;
     color: #CD0404;
 }

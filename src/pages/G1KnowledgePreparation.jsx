@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../assets/css/g1-knowledge.css";
 import g1KnowledgeVideo1 from '../assets/images/g1-knowledge-video-1.png';
 import g1KnowledgeVideo2 from '../assets/images/g1-knowledge-video-2.png';
@@ -8,9 +8,84 @@ import g1KnowledgePreparationCourse from '../assets/images/G1 Knowledge Preparat
 import g1KnowledgePracticeTests from '../assets/images/g1-knowledge-practice-tests.jpg';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import SearchIcon from '@mui/icons-material/Search';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import { Button } from '@mui/material';
 
 const G1KnowledgePreparation = () => {
+
+  const [whostatus,setWhoStatus] = useState("none");
+  const [wherestatus,setWhereStatus] = useState("none");
+  const [howmuchstatus,setHowMuchStatus] = useState("none");
+  const [whatstatus,setWhatStatus] = useState("none");
+  const [downIcon,setDownIcon] = useState("block");
+  const [upIcon,setUpIcon] = useState("none");
+
+  const handleWho=()=>{
+      if(whostatus==="none"){
+        setWhereStatus("none")
+        setHowMuchStatus("none")
+        setWhatStatus("none")
+        setWhoStatus("block")
+        setDownIcon("none")
+        setUpIcon("block")
+      }
+      else{
+        setWhoStatus("none")
+        setDownIcon("block")
+        setUpIcon("none")
+      }
+  }
+
+  const handleWhere =()=>{
+    if(wherestatus==="none"){
+      setWhoStatus("none")
+      setHowMuchStatus("none")
+      setWhatStatus("none")
+      setWhereStatus("block")
+      setDownIcon("none")
+      setUpIcon("block")
+    }
+    else{
+      setWhereStatus("none")
+      setDownIcon("block")
+      setUpIcon("none")
+    }
+  }
+
+  const handleHowMuch =()=>{
+    if(howmuchstatus==="none"){
+      setWhoStatus("none")
+      setWhatStatus("none")
+      setWhereStatus("none")
+      setHowMuchStatus("block")
+      setDownIcon("none")
+      setUpIcon("block")
+    }
+    else{
+      setHowMuchStatus("none")
+      setDownIcon("block")
+      setUpIcon("none")
+    }
+  }
+
+  const handleWhat =()=>{
+    if(whatstatus==="none"){
+      setWhoStatus("none")
+      setHowMuchStatus("none")
+      setWhereStatus("none")
+      setWhatStatus("block")
+      setDownIcon("none")
+      setUpIcon("block")
+    }
+    else{
+      setWhatStatus("none")
+      setDownIcon("block")
+      setUpIcon("none")
+    }
+  }
+
+
   return (
     <>
         <div className='g1-knowledge'>
@@ -21,51 +96,52 @@ const G1KnowledgePreparation = () => {
             <h1>FUNDAMENTALS OF THE OFFICIAL G1 KNOWLEDGE TEST</h1>
 
             <div className='g1-knowledge-cards'>
-              <div className='g1-knowledge-card'>
-                        <h3>Who can take the G1 Test?</h3>
-                        <p>
-                        All new drivers who are considered to be “beginners” can apply for a driver’s license 
-                        as long as they are at least 16 years old. You need a Class G licence to drive a car, 
-                        van, or small truck. You must have a Class G licence before you can be licensed to 
-                        drive any other type of vehicle. The only exception is motorcycles. You may get a 
-                        motorcycle licence (Class M) without first getting a Class G licence. To get a G1 
-                        license you must take a G1 knowledge test that is also known as the G1 written test 
-                        about the traffic signs and rules of the road in Ontario.
-                        </p>
-                </div>
-                <div className='g1-knowledge-card'>
-                        <h3>Where to get a G1 Test?</h3>
-                        <p>
-                        The official test is created by the Ministry of Transportation (MTO) and is offered in 
-                        all DriveTest Centres. All testing centres may have a paper test option while a few 
-                        have an online option too. In addition to the written exam, you will also need to pass 
-                        a vision test. You don’t need to book a G1 written test in advance. Just find a DriveTest 
-                        centre and reach there at least an hour before the closing time of that centre.
-                        </p>
-                </div>
-                <div className='g1-knowledge-card'>
-                        <h3>How much does it cost?</h3>
-                        <p>
-                        The G1 package fee is $158.25 which will cover your knowledge test, eventual G2 driver’s 
-                        test, and your 5-year license. You have to pay this fee at the time you apply for your 
-                        G1 license.  If you need to retake the written exam, it will be an additional $15.75. 
-                        You should check online for the current information concerning these government fees. 
-                        Cash, debit cards, credit cards, or personal cheques may be used to pay these fees.
-                        </p>
-                </div>
-                <div className='g1-knowledge-card'>
-                        <h3>What should I study?</h3>
-                        <p>
-                        There are 40 multiple-choice questions on the official G1 test. You will receive two test 
-                        sheets each with 20 questions. The first part is about road signs, while the second one 
-                        is about the rules of the road. There is no time limit to complete the test. Usually, it 
-                        takes about 30 minutes to complete. You may take your time and read the questions 
-                        carefully before you choose your answers. For writing or reading issues, you may request 
-                        an audio or verbal test. The total passing score for both sections is 80%. That means you 
-                        will need 16 or more questions right on each of those two sections in order to pass your 
-                        G1 test. The results of your G1 written test are valid for one year.
-                        </p>
-                </div>
+              <ul>
+                <li className='who-card-li' onClick={handleWho}>Who can take the G1 Test?<ArrowDropDownIcon style={{display:downIcon,marginLeft:10}}></ArrowDropDownIcon><ArrowDropUpIcon style={{display:upIcon,marginLeft:10}}></ArrowDropUpIcon></li>
+                <li className='where-card-li' onClick={handleWhere}>Where to get a G1 Test?<ArrowDropDownIcon style={{display:downIcon,marginLeft:10}}></ArrowDropDownIcon><ArrowDropUpIcon style={{display:upIcon,marginLeft:10}}></ArrowDropUpIcon></li>
+                <li className='how-much-card-li' onClick={handleHowMuch}>How much does it cost?<ArrowDropDownIcon style={{display:downIcon,marginLeft:10}}></ArrowDropDownIcon><ArrowDropUpIcon style={{display:upIcon,marginLeft:10}}></ArrowDropUpIcon></li>
+                <li className='what-card-li' onClick={handleWhat}>What should I study?<ArrowDropDownIcon style={{display:downIcon,marginLeft:10}}></ArrowDropDownIcon><ArrowDropUpIcon style={{display:upIcon,marginLeft:10}}></ArrowDropUpIcon></li>
+              </ul>
+              <div style={{display:whostatus}} className='who-text'>
+                <p>
+                All new drivers who are considered to be “beginners” can apply for a driver’s license as long 
+                as they are at least 16 years old. You need a Class G licence to drive a car, van, or small 
+                truck. You must have a Class G licence before you can be licensed to drive any other type of 
+                vehicle. The only exception is motorcycles. You may get a motorcycle licence (Class M) without 
+                first getting a Class G licence. To get a G1 license you must take a G1 knowledge test that is 
+                also known as the G1 written test about the traffic signs and rules of the road in Ontario.
+                </p>
+              </div>
+              <div style={{display:wherestatus}} className='where-text'>
+                <p>
+                The official test is created by the Ministry of Transportation (MTO) and is offered in all 
+                DriveTest Centres. All testing centres may have a paper test option while a few have an online 
+                option too. In addition to the written exam, you will also need to pass a vision test. You don’t 
+                need to book a G1 written test in advance. Just find a DriveTest centre and reach there at least 
+                an hour before the closing time of that centre.
+                </p>
+              </div>
+              <div style={{display:howmuchstatus}} className='how-much-text'>
+                <p>
+                The G1 package fee is $158.25 which will cover your knowledge test, eventual G2 driver’s test, 
+                and your 5-year license. You have to pay this fee at the time you apply for your G1 license.  
+                If you need to retake the written exam, it will be an additional $15.75. You should check online 
+                for the current information concerning these government fees. Cash, debit cards, credit cards, 
+                or personal cheques may be used to pay these fees.
+                </p>
+              </div>
+              <div style={{display:whatstatus}} className='what-text'>
+                <p>
+                There are 40 multiple-choice questions on the official G1 test. You will receive two test sheets 
+                each with 20 questions. The first part is about road signs, while the second one is about the 
+                rules of the road. There is no time limit to complete the test. Usually, it takes about 30 
+                minutes to complete. You may take your time and read the questions carefully before you choose 
+                your answers. For writing or reading issues, you may request an audio or verbal test. The total 
+                passing score for both sections is 80%. That means you will need 16 or more questions right on 
+                each of those two sections in order to pass your G1 test. The results of your G1 written test 
+                are valid for one year.
+                </p>
+              </div>
             </div>
 
             <div className='g1-knowledge-video-cards'>
@@ -96,7 +172,7 @@ const G1KnowledgePreparation = () => {
             and includes 40 questions (20 Rules of The Road, 20 Road Signs).
             </p>
 
-            <h1>G1 KNOWLEDGE PREPARATION COURSE</h1>
+            <h1 className='g1-preparation-course-header'>G1 KNOWLEDGE PREPARATION COURSE</h1>
 
             <p className='g1-preparation-course-text'>
                 Master Driving School offers a fully online and self-paced G1 Knowledge Preparation Course 
@@ -155,7 +231,7 @@ const G1KnowledgePreparation = () => {
                 </div>
             </div>
 
-            <h1>G1 KNOWLEDGE PRACTICE TESTS FREE</h1>
+            <h1 className='g1-preparation-course-header'>G1 KNOWLEDGE PRACTICE TESTS FREE</h1>
 
             <p className='g1-practice-test-text'>
               The official site for the Ontario Ministry of Transportation has only 8 sample questions to give 
@@ -221,7 +297,8 @@ const G1KnowledgePreparation = () => {
             to practice your driving in a vehicle on the road, under proper supervision. You are strongly 
             recommended to practice driving in a car as much as possible during this stage of your licensing 
             process. There are a few important legal restrictions to keep in mind during this period:
-                <ul>
+                <ul>import { useState } from 'react';
+
                   <li>You must always have a licensed driver in the vehicle with you while you are driving. The supervising driver needs to have a BAC level below 0.05 and have more than four years of driving experience.</li>
                   <li>You cannot have any alcohol while operating a car with a G1 license.</li>
                   <li>You need to be wearing a seatbelt while driving and every passenger in your vehicle must also wear their seatbelts.</li>

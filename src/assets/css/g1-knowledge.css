@@ -31,6 +31,68 @@
     width: 100%;
     margin: auto;
     display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.g1-knowledge-cards ul{
+    list-style-type: none;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.g1-knowledge-cards li{
+    height: 200px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.g1-knowledge-cards li:hover{
+    cursor: pointer;
+}
+
+.who-card-li{
+    background: linear-gradient(135deg,rgba(202, 199, 199, 0.253),rgba(206, 49, 28, 0.842));
+    border-radius: 10px;
+}
+
+.where-card-li{
+    background: linear-gradient(135deg,rgba(202, 199, 199, 0.253),rgba(243, 239, 13, 0.87));
+    border-radius: 10px;
+}
+
+.how-much-card-li{
+    background: linear-gradient(135deg,rgba(202, 199, 199, 0.253),rgba(15, 146, 44, 0.76));
+    border-radius: 10px;
+}
+
+.what-card-li{
+    background: linear-gradient(135deg,rgba(202, 199, 199, 0.253),rgba(58, 57, 57, 0.726));
+    border-radius: 10px;
+}
+
+.who-text,.where-text,.how-much-text,.what-text{
+    width:85%;
+    margin: auto;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 30px;
+    text-align: justify;
+    background: rgb(248, 242, 242);
+}
+
+/* .g1-knowledge-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 35px;
@@ -40,18 +102,18 @@
 .g1-knowledge-card{
     width: 290px;
     padding: 20px;
-    margin: 30px 20px 20px 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 25px black;
 }
 
 .g1-knowledge-card p{
     text-align: justify;
     padding: 15px;
-}
+} */
 
 .g1-knowledge-video-cards{
     width: 100%;
@@ -87,6 +149,14 @@
     margin-top: 30px;
     margin-bottom: 50px;
     text-align: justify;
+}
+
+.g1-preparation-course-header{
+    width: 85%;
+    margin: auto;
+    background-color: #1e2035;
+    color: white;
+    padding: 15px;
 }
 
 .g1-preparation-course-text,.g1-practice-test-text{
