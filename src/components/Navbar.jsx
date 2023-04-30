@@ -91,7 +91,7 @@ const Navbar =()=> {
         <div style={{display:status}} className='locations-part'>
                 <div className='location-uls'>
                 <ul>
-                    <li>KW Region(Kitchener,Waterloo,Cambridge)</li>
+                    <li><Link to="/pricings" className='link'>KW Region(Kitchener,Waterloo,Cambridge)</Link></li>
                     <li>Barrie</li>
                     <li>Brantford</li>
                     <li>Burlington</li>
@@ -127,8 +127,8 @@ const Navbar =()=> {
         <div style={{display:coursestatus}} className='online-courses-part'>
                 <div className='online-courses-uls'>
                     <ul>
-                        <li><Link to="/g1-knowledge-preparation">G1 Knowledge Preparation</Link></li>
-                        <li><Link to="/online-beginner-driver-education">Online Beginner Driver Education</Link></li>
+                        <li><Link style={{textDecoration:"none"}} to="/g1-knowledge-preparation">G1 Knowledge Preparation</Link></li>
+                        <li><Link style={{textDecoration:"none"}} to="/online-beginner-driver-education">Online Beginner Driver Education</Link></li>
                     </ul>
                 </div>
         </div>

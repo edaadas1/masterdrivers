@@ -11,6 +11,7 @@ import SelectBox1 from '../components/SelectBox1';
 import SelectBox2 from '../components/SelectBox2';
 import ImageSlider from '../components/HomeSlider';
 import Testimonials from '../components/Testimonials';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -85,7 +86,7 @@ const Home = () => {
                 <h4>G1 Knowledge Practice Tests</h4>
             </div>
             <div className='offer-card-button'>
-                <Button variant="contained" color='primary'>Learn More</Button>
+                <Button variant="contained" color='primary'><Link style={{textDecoration:"none",color:"white"}} to="/g1-knowledge-preparation">Learn More</Link></Button>
             </div>
             
             </div>
@@ -102,7 +103,7 @@ const Home = () => {
                 <h4>Premium Package</h4>
             </div>
             <div className='offer-card-button'>
-                <Button variant="contained" color='primary'>Learn More</Button>
+                <Button variant="contained" color='primary'><Link style={{textDecoration:"none",color:"white"}} to="/online-beginner-driver-education">Learn More</Link></Button>
             </div>
             
             </div>
@@ -220,20 +221,20 @@ const Home = () => {
 
             <div className='user-numbers'>
                 <div className='user-numbers-card'>
-                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
-                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                    <p style={{fontSize:40,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:16,fontWeight:600}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
                 </div>         
                 <div className='user-numbers-card'>
-                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
-                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                    <p style={{fontSize:40,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:16,fontWeight:600}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
                 </div>    
                 <div className='user-numbers-card'>
-                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
-                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                    <p style={{fontSize:40,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:16,fontWeight:600}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
                 </div>    
                 <div className='user-numbers-card'>
-                    <p style={{fontSize:60,fontWeight:600}}>8,000+ Students</p>
-                    <p style={{fontSize:20}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
+                    <p style={{fontSize:40,fontWeight:600}}>8,000+ Students</p>
+                    <p style={{fontSize:16,fontWeight:600}}>THE NUMBER OF STUDENTS MASTER DRIVERS <br /> DRIVING SCHOOL</p>
                 </div>      
             </div>
 

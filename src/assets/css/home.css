@@ -203,15 +203,19 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
 }
 
 .user-numbers-card{
-    width:300px;
-    padding: 30px;
+    width: 280px;
+    padding: 40px 10px;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px rgb(49, 48, 48) ;
-    margin: 10px;
+    box-shadow: 10px 10px 20px black;
+    margin: 20px;
+}
+
+.user-numbers-card p{
+    margin-bottom: 10px;
 }
 
 .float{

@@ -8,6 +8,7 @@ import OnlineCourses from './pages/OnlineCourses';
 import G1KnowledgePreparation from './pages/G1KnowledgePreparation';
 import OnlineBeginnerDriverEducation from './pages/OnlineBeginnerDriverEducation';
 import LocationPricingHome from './pages/LocationPricingHome';
+import Pricings from './pages/Pricings';
 
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
 
         <Route path="/location-pricing">
           <LocationPricingHome/>
+        </Route>
+
+        <Route path="/pricings">
+          <Pricings/>
         </Route>
 
         <Route path="/career">

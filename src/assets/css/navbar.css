@@ -111,6 +111,10 @@
     list-style-type: none;
 }
 
+.online-courses-uls ul li{
+    text-decoration: none;
+}
+
 .online-courses-uls ul li:hover{
     cursor: pointer;
     color: #CD0404;
