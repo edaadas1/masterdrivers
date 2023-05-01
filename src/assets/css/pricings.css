@@ -30,7 +30,6 @@
 
 .pricings-body p{
     text-align: justify;
-    margin-bottom: 80px;
 }
 
 .pricings-body p span{
@@ -45,19 +44,19 @@
     margin-bottom: 30px;
 }
 
+.package-info{
+    height: 330px;
+}
+
 .student-package,.standard-package,.premium-package{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 350px;
     border: 1px solid black;
     padding: 20px;
     margin: 15px;
-}
-
-.package-info{
-    height: 350px;
 }
 
 .pricings-page-img-and-text{
@@ -90,7 +89,7 @@
     margin-bottom: 80px;
     border-radius: 10px;
     background-color: #F3E8FF;
-    padding: 0 20px 0 20px ;
+    padding: 0 20px 30px 20px ;
 }
 
 .to-buy-an-online-beginner-driver-education-package img{
@@ -128,7 +127,7 @@
 }
 
 .in-car-lessons-card{
-    width: 500px;
+    width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -136,3 +135,127 @@
     border: 1px solid black;
     padding: 20px;
 }
+
+.in-car-lessons-card-text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-car-lessons-card-text-part h2{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.in-car-lessons-card-text-part p{
+    margin-bottom: 20px;
+}
+
+.pricings-secure-payment-images-part{
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+.pricings-secure-payment-images-part{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.pricings-secure-payment-images-part img{
+    width: 70%;
+    height: 100px;
+}
+
+.how-to-use-credits{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.how-to-use-credits p{
+    margin-bottom: 20px;
+}
+
+.how-to-use-credits ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.how-to-use-credits ul li{
+    margin-bottom: 5px;
+}
+
+.how-to-use-credits ul li a{ 
+    text-decoration: none;
+    color: blue;
+}
+
+.custom-pricing{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: #F3E8FF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.custom-pricing img{
+    width: 25%;
+    margin-right: 40px;
+}
+
+.custom-pricing-text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.custom-pricing-text-part ul{
+    margin-left: 40px;
+}
+
+
+
+@media only screen and (max-width: 710px) {
+    .to-buy-an-online-beginner-driver-education-package{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .in-car-lessons-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .pricings-secure-payment-images-part{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 893px) {
+    .custom-pricing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
