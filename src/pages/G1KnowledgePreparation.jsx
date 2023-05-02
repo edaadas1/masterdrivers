@@ -289,8 +289,6 @@ const G1KnowledgePreparation = () => {
                 </div>
             </div>
 
-            <h1>PREVIEW THE G1 PRACTICE TESTS</h1>
-
             <h1>WHAT IS NEXT AFTER THE G1 WRITTEN TEST?</h1>
             <p className='after-written-test-text'>
             Once you successfully pass your G1 test, you will be a G1 licence holder. This gives you the right 

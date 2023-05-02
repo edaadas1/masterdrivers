@@ -74,6 +74,7 @@
     width: 290px;
     transition: .2s ease-in-out;
     margin-right: 10px;
+    margin-bottom: 20px;
     box-shadow: 10px 10px 30px black;
     display: flex;
     flex-direction: column;
@@ -167,7 +168,6 @@
     justify-content: space-between;
 }
 
-
 .qualified,.affordable,.e-learning,.multiculturalism{
     display: flex;
     width: 300px;
@@ -249,5 +249,11 @@
     }
     .register-boxes{
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    .offer-card{
+        width: 100%;
     }
 }

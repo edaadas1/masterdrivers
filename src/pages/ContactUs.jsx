@@ -21,8 +21,15 @@ const ContactUs = () => {
     };
 
     const handleChangeTwo = () => {
+      if(checkedTwo===false){
         setCheckedTwo(!checkedTwo);
         setStatus("block")
+      }
+      else{
+        setStatus("none")
+        setCheckedTwo(!checkedTwo);
+      }
+        
     };
 
   return (
@@ -80,24 +87,25 @@ const ContactUs = () => {
                             onChange={handleChangeTwo}
                         />
                         <p>I need to support for the existing service</p>
+                        
                     </div>
+                    
+
                     <div style={{display:status}} className="service-support">
-                  
+                        <TextField
+                            style={{width:"100%"}}
+                            id="outlined-multiline-static"
+                            label="Severity of your inquiry"
+                            multiline
+                            rows={4}
+                        />
                     </div>
+                    
                     <Button style={{marginTop:10}} variant="contained" color='warning'>SUBMIT</Button>
                     
-                        </div>
                     </div>
+                </div>
               
-
-
-                {/* <input type="text" placeholder='First Name' required /> <br />
-                <input type="text" placeholder='Last Name' required /><br />
-                <input type="email" placeholder='E-mail' required /><br />
-                <input type="text" placeholder='Phone Number' required /><br />
-                
-                <textarea name="" id="" cols="30" rows="10" placeholder=''></textarea><br />
-                <input type="submit" value="Submit" /> */}
             </form>
             </div>
             
