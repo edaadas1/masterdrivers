@@ -82,6 +82,18 @@
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 1167px) {
-    
+@media only screen and (max-width: 700px) {
+    .online-beginner-driver-education-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .online-beginner-driver-education-btn-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
 }

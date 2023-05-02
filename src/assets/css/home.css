@@ -236,3 +236,18 @@
 .my-float{
 	margin-top:16px;
 }
+
+@media only screen and (max-width: 893px) {
+    .register-part{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .register-now{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 500px;
+    }
+    .register-boxes{
+        margin-bottom: 20px;
+    }
+}

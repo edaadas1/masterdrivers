@@ -72,3 +72,24 @@
     color: white;
     text-align: center;
 }
+
+@media only screen and (max-width: 980px) {
+    .footer-text-part{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .service-location ul{
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 792px) {
+    .footer-text-part{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}

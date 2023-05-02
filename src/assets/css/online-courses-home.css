@@ -47,17 +47,16 @@
     width: 85%;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 90px;
 }
 
 .online-courses-home-course-card{
-    width: 550px;
+    width: 470px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px 15px 15px 10px;
     box-shadow: 10px 10px 20px black;
     border-radius: 10px;
@@ -74,7 +73,6 @@
 
 .online-courses-home-course-card p{
     width: 100%;
-    height: 210px;
     padding: 25px;
     text-indent: 30px;
     margin-top: 5px;
@@ -157,14 +155,38 @@
         display: flex;
         flex-direction: column;
     }
-    .online-courses-home-course-card p{
-        min-height: 500px;
+}
+
+
+@media only screen and (max-width:1024px){
+    .online-courses-home-course-card-part{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .online-courses-home-course-card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .online-courses-home-course-card-img-and-p{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .online-courses-home-course-card img{
+        min-width: 300px;
+        min-height: 300px;
     }
 }
 
-@media only screen and (max-width: 1500px) {
-    .online-courses-home-bottom-cards{
+@media only screen and (max-width:715px){
+    .online-courses-home-course-card{
+        width: 100%;
+    }
+    .online-courses-home-course-card-img-and-p{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -35,6 +35,7 @@ const OnlineCourses = () => {
                 <div className='online-courses-home-course-card-part'>
                     <div className='online-courses-home-course-card'>
                         <h2>G1 KNOWLEDGE TEST PREPARATION</h2>
+                        <div className='online-courses-home-course-card-img-and-p'>
                         <img src={courseImage1} alt="" />
                         <p>Master Driving School offers a fully online and self-paced <span> G1 Knowledge Preparation 
                            Course</span> that includes 270 minutes of training and <span>15 pieces of G1 Practice Tests. 
@@ -43,11 +44,13 @@ const OnlineCourses = () => {
                            Arabic, and Turkish tests are available to take. Other languages, primarily Urdu and 
                            Arabic will be available soon.
                         </p>
+                        </div>
                         <Button style={{paddingLeft:50,paddingRight:50}} variant="contained" color='primary'>Learn more</Button>
                     </div>
 
                     <div className='online-courses-home-course-card'>
                         <h2>G2 / BEGINNER DRIVER CERTIFICATION</h2>
+                        <div className='online-courses-home-course-card-img-and-p'>
                         <img src={courseImage2} alt="" />
                         <p>
                         Master Driving School offers <span> 30 hours of BDE online self-paced</span> modernized, 
@@ -58,6 +61,7 @@ const OnlineCourses = () => {
                         a flexible, self-paced training experience. There is no difference between in-class 
                         training and online training.
                         </p>
+                        </div>
                         <div className='online-courses-home-course-card-btn-part'>
                             <Button variant="contained" color='primary'>PRICING FOR TORONTO</Button>
                             <Button variant="contained" color='primary'>PRICING FOR OTHER LOCATIONS</Button>

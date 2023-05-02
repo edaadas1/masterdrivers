@@ -38,14 +38,13 @@
 
 .pricings-g2-packages-cards{
     display: flex;
-    flex-wrap: wrap;
     margin: auto;
     width: 100%;
     margin-bottom: 30px;
 }
 
 .package-info{
-    height: 330px;
+  
 }
 
 .student-package,.standard-package,.premium-package{
@@ -259,3 +258,23 @@
     }
 }
 
+@media only screen and (max-width: 1210px) {
+    .pricings-g2-packages-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .student-package,.standard-package,.premium-package{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1157px) {
+    .pricings-g2-packages-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .student-package,.standard-package,.premium-package{
+        width: 500px;
+    }
+}

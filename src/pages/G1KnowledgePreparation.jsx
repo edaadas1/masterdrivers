@@ -297,8 +297,7 @@ const G1KnowledgePreparation = () => {
             to practice your driving in a vehicle on the road, under proper supervision. You are strongly 
             recommended to practice driving in a car as much as possible during this stage of your licensing 
             process. There are a few important legal restrictions to keep in mind during this period:
-                <ul>import { useState } from 'react';
-
+                <ul>
                   <li>You must always have a licensed driver in the vehicle with you while you are driving. The supervising driver needs to have a BAC level below 0.05 and have more than four years of driving experience.</li>
                   <li>You cannot have any alcohol while operating a car with a G1 license.</li>
                   <li>You need to be wearing a seatbelt while driving and every passenger in your vehicle must also wear their seatbelts.</li>
