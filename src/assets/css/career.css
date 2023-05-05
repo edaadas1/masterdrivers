@@ -103,7 +103,7 @@
     justify-content: center;
     align-items: center;
     border: 2px dashed #1475cf;
-    height: 50px;
+    height: 100px;
     width: 100%;
     cursor: pointer;
     border-radius: 5px;
@@ -124,5 +124,3 @@
     display: flex;
     align-items: center;
 }
-
-

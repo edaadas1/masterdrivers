@@ -80,11 +80,14 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
+    background-color: #0A043C;
+   /*  background-image: url("https://c0.wallpaperflare.com/preview/316/966/558/traffic-light-at-night-thumbnail.jpg");
+    background-size: 350px 450px; */
+    padding-top: 20px;
 }
 
 .offer-card:hover{
     box-shadow: 10px 10px 20px black ;
-    cursor: pointer;
 }
 
 .offer-card-title{
@@ -92,11 +95,9 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   height: 100px;
-   background-color: #FF8400;
-   background-image: url("../images/traffic-banner.jpg");
    color: white;
    border-radius: 10px 10px 0 0;
+   padding: 0 10px 0 10px;
 }
 
 .offer-card-paragraph{
@@ -104,6 +105,8 @@
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: white;
+    text-align: start;
 }
 
 .offer-card-span{
@@ -113,9 +116,10 @@
 .offer-card-options{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 150px;
+    color: white;
 }
 
 .offer-card-button{
@@ -255,5 +259,6 @@
 @media only screen and (max-width: 697px) {
     .offer-card{
         width: 100%;
+        background-size: 590px 450px;
     }
 }

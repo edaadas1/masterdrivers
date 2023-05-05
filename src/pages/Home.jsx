@@ -12,6 +12,7 @@ import SelectBox2 from '../components/SelectBox2';
 import ImageSlider from '../components/HomeSlider';
 import Testimonials from '../components/Testimonials';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Home = () => {
 
@@ -27,6 +28,47 @@ const Home = () => {
         height: "280px",
         margin: "0 auto",
       };
+
+      const [g1OptionsStatus,setg1OptionsStatus] = useState("none");
+      const [beginnerDriverOptionsStatus,setBeginnerStatus] = useState("none");
+      const [inCarOptionsStatus,setInCarStatus] = useState("none");
+      const [inCarPackageOptionsStatus,setInCarPackageStatus] = useState("none");
+
+      const showHiddenG1Options = () => {
+        if(g1OptionsStatus==="none"){
+            setg1OptionsStatus("block")
+        }
+        else{
+            setg1OptionsStatus("none")
+        }
+      }
+
+      const showHiddenBeginnerOptions = () => {
+        if(beginnerDriverOptionsStatus==="none"){
+            setBeginnerStatus("block")
+        }
+        else{
+            setBeginnerStatus("none")
+        }
+      }
+
+      const showHiddenInCarOptions = () => {
+        if(inCarOptionsStatus==="none"){
+            setInCarStatus("block")
+        }
+        else{
+            setInCarStatus("none")
+        }
+      }
+
+      const showHiddenInCarPackageOptions = () => {
+        if(inCarPackageOptionsStatus==="none"){
+            setInCarPackageStatus("block")
+        }
+        else{
+            setInCarPackageStatus("none")
+        }
+      }
 
   return (
     <div>
@@ -81,13 +123,15 @@ const Home = () => {
                 and are available in <span className='offer-card-span'>English,French, Chinese, Hindi, Arabic, 
                 and Turkish.</span>  Explore our online programs now and try the demo test.
             </p>
-            <div className='offer-card-options'>
+            <Button style={{textDecoration:"none",color:"white",marginBottom:20,marginRight:10,marginLeft:10}} variant="text" color='primary' onClick={showHiddenG1Options}>Show Options...</Button>
+            <div className='offer-card-options' style={{display:g1OptionsStatus}}>
                 <h4>G1 Knowledge Preparation Course</h4>
                 <h4>G1 Knowledge Practice Tests</h4>
-            </div>
-            <div className='offer-card-button'>
+                <div className='offer-card-button'>
                 <Button variant="contained" color='primary'><Link style={{textDecoration:"none",color:"white"}} to="/g1-knowledge-preparation">Learn More</Link></Button>
+                </div>
             </div>
+            
             
             </div>
             <div className='offer-card'>
@@ -97,14 +141,16 @@ const Home = () => {
                 Beginner Driver Education to become eligible to book your <span className='offer-card-span'>road 
                 test 4 months earlier</span>  and have a great <span className='offer-card-span'>insurance discount.</span>
             </p>
-            <div className='offer-card-options'>
+            <Button style={{textDecoration:"none",color:"white",marginBottom:20,marginRight:10,marginLeft:10}} variant="text" color='primary' onClick={showHiddenBeginnerOptions}>Show Options...</Button>
+            <div className='offer-card-options' style={{display:beginnerDriverOptionsStatus}}>
                 <h4>Student Package</h4>
                 <h4>Standard Package</h4>
                 <h4>Premium Package</h4>
-            </div>
-            <div className='offer-card-button'>
+                <div className='offer-card-button'>
                 <Button variant="contained" color='primary'><Link style={{textDecoration:"none",color:"white"}} to="/online-beginner-driver-education">Learn More</Link></Button>
+                </div>
             </div>
+            
             
             </div>
             <div className='offer-card'>
@@ -116,12 +162,13 @@ const Home = () => {
                 experienced (ex-examiner) instructors who can train in <span className='offer-card-span'>English, Hindi, Chinese, Urdu, Punjabi, 
                 Arabic, and Turkish</span> depends on the location. Explore our lessons now.
             </p>
-            <div className='offer-card-options'>
+            <Button style={{textDecoration:"none",color:"white",marginBottom:20,marginRight:10,marginLeft:10}} variant="text" color='primary' onClick={showHiddenInCarOptions}>Show Options...</Button>
+            <div className='offer-card-options' style={{display:inCarOptionsStatus}}>
                 <h4>2 hours of in-car training</h4>
                 <h4>G2 / G Road Test</h4>
-            </div>
-            <div className='offer-card-button'>
+                <div className='offer-card-button'>
                 <Button variant="contained" color='primary'>Learn More</Button>
+                </div>
             </div>
             
             </div>
@@ -131,13 +178,14 @@ const Home = () => {
                 You may also buy our one-on-one in-car training packages to purchase more than 2 hours at once 
                 and get discount. You can book your lessons when you are available to take.
             </p>
-            <div className='offer-card-options'>
+            <Button style={{textDecoration:"none",color:"white",marginBottom:20,marginRight:10,marginLeft:10}} variant="text" color='primary' onClick={showHiddenInCarPackageOptions}>Show Options...</Button>
+            <div className='offer-card-options' style={{display:inCarPackageOptionsStatus}}>
                 <h4>4 hours of in-car training</h4>
                 <h4>6 hours of in-car training</h4>
                 <h4>10 hours of in-car training</h4>
-            </div>
-            <div className='offer-card-button'>
+                <div className='offer-card-button'>
                 <Button variant="contained" color='primary'>Learn More</Button>
+             </div>
             </div>
             
             </div>
